@@ -4,6 +4,7 @@ import Homepage from './pages/Homepage';
 import './App.css'
 import Header from './components/Header';
 import Footer from './components/Footer';
+import {Counter} from "./components/Counter";
 
 function App() {
   const queryClient= new QueryClient();
@@ -14,6 +15,7 @@ function App() {
       <QueryClientProvider client={queryClient}>
         <Homepage></Homepage>
       </QueryClientProvider>
+      <Counter />
       <Footer />
     </div>
   );
